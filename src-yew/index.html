@@ -3,6 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
+    <link data-trunk rel="sass" href="index.scss" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tauri Yew App</title>
 </head>
 

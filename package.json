@@ -1,7 +1,7 @@
 {
   "name": "tauri-yew-app",
   "scripts": {
-    "tauri": "tauri",
+    "tauri": "tauri dev",
     "dev": "run-p yew.watch",
     "yew.watch": "cd src-yew && trunk serve -d ../dist"
   },

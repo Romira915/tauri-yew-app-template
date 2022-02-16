@@ -37,8 +37,8 @@ impl Component for Model {
         let link = ctx.link();
         html! {
             <div>
-                <button onclick={link.callback(|_| Msg::AddOne)}>{ "+1" }</button>
-                <button onclick={link.callback(|_| Msg::SubOne)}>{ "-1" }</button>
+                <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ..." onclick={link.callback(|_| Msg::AddOne)}>{ "+1" }</button>
+                <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ..." onclick={link.callback(|_| Msg::SubOne)}>{ "-1" }</button>
                 <p>{ if self.value < 10 {
                     self.value.to_string()
                 } else {
