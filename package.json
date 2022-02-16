@@ -1,0 +1,16 @@
+{
+  "name": "tauri-yew-app",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "run-p yew.watch",
+    "yew.watch": "cd src-yew && trunk serve -d ../dist"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-rc.4",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.0-rc.1"
+  }
+}
